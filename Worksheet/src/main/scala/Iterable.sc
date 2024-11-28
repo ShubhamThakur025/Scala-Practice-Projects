@@ -3,6 +3,8 @@
  * By default, Scala always picks immutable collections. Root collections data structures can be mutable and immutable.
  */
 
+//View performance stats of every collection here: https://docs.scala-lang.org/overviews/collections-2.13/performance-characteristics.html
+
 /**
  * Iterable trait resides at very top of the collection.
  * It implements some concrete methods that are later inherited by its implementations.
