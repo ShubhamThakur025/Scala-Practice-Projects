@@ -56,3 +56,9 @@ val iter2 = iter1.filter(p => p % 2 == 0)
 //Both produces the same result -> concatenating the two collections.
 iter1 ++ iter2
 iter1.concat(iter2)
+
+//.collect
+val evenNumbers = iter1.collect {
+  case num if num % 2 == 0 => num*6
+}
+//.collect is a combination of filter and map -> create a new collection and apply operations on elements that satisfy a given condition.
